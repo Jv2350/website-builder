@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Builder</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- sidebar with elements -->
+      <aside class="sidebar">
+        <h2>elements</h2>
+        <div class="element" draggable="true" data-type="text">text</div>
+        <div class="element" draggable="true" data-type="image">image</div>
+        <div class="element" draggable="true" data-type="button">button</div>
+      </aside>
+
+      <!-- main canvas area -->
+      <main class="main">
+        <h2>canvas</h2>
+        <div id="canvas" class="canvas"></div>
+      </main>
+
+      <!-- editor for properties -->
+      <aside class="editor">
+        <h2>edit properties</h2>
+        <form id="property-form">
+          <div id="form-fields"></div>
+          <button
+            id="delete-btn"
+            type="button"
+            class="delete-btn"
+            style="display: none"
+          >
+            delete
+          </button>
+        </form>
+      </aside>
+    </div>
+
+    <!-- link to script -->
+    <script src="script.js"></script>
+  </body>
+</html>
